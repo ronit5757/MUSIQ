@@ -1,0 +1,234 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,500;1,300&display=swap');
+
+
+*,
+*::before,
+*::after{ 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 62%;
+    font-family: 'Jost', sans-serif; 
+}
+.main_div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(238,174,202); */
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    /* background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+}
+ #bgan{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+} 
+
+.music_container{
+    height: 52rem; 
+    width: 33rem;
+    border-radius: 0.2rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    background-color: rgba(240, 240, 240, 0.763);
+    box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.304), 0rem 1.5rem 1.2rem rgb(0, 0, 0, 0.22);
+    padding-top: 0;
+    text-align: center;
+
+}
+
+.music_container:hover{
+    transform: scale(1.01);
+}
+
+.music_container .nav{
+    height: 2rem;
+    width: 33rem;
+    background-color: rgba(44, 40, 40, 0.816);
+    box-shadow: 0rem 0.4rem 0.4rem rgba(80, 81, 90, 0.347);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav:hover{
+    color: pink;
+}
+
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(80, 81, 90, 0.347);
+}
+
+.music_container #artist{
+    color: rgb(160, 153, 153);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.img_container{
+    height: 23rem;
+    width: 23rem;
+    /* margin: auto; */
+    margin-left: 4.6rem;
+    margin-bottom: 14px;
+} 
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 2rem 0.5rem rgba(0, 0, 0, 0.35);
+}
+
+ .animatedLines{
+    height: 10px;
+    width: 100px;
+    margin-left: 115px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .animatedLines .lines:nth-child(1) {
+    animation-delay: .1s;
+    background-color: rgb(0, 0, 0);
+ }
+ 
+ .animatedLines .lines:nth-child(2) {
+    animation-delay: .2s;
+    background-color: rgb(254, 114, 137);
+ }
+ 
+ .animatedLines .lines:nth-child(3) {
+    animation-delay: .3s;
+ 
+    background-color: black;
+ }
+ 
+ .animatedLines .lines:nth-child(4) {
+    animation-delay: .4s;
+    background-color: rgb(255, 115, 138);
+ }
+ 
+ .animatedLines .lines:nth-child(5) {
+    animation-delay: .3s;
+    background-color: black;
+ }
+ 
+ .animatedLines .lines:nth-child(6) {
+    animation-delay: .2s;
+    background-color: rgb(255, 114, 138);
+ }
+ 
+ .animatedLines .lines:nth-child(7) {
+    animation-delay: .1s;
+    background-color: black;
+ }
+ .animatedLines .lines {
+    list-style: none;
+    width: 1px;
+    height: 8px;
+    margin: 0 4px;
+    animation: animatedBars .4s infinite alternate;
+ }
+ 
+ @keyframes animatedBars {
+    0% {
+       transform: scaleY(2);
+    }
+ 
+    25% {
+       transform: scaleY(1);
+    }
+ 
+    50% {
+       transform: scaleY(1);
+    }
+ 
+    100% {
+       transform: scaleY(3);
+    }
+ 
+ }
+
+.music_controls{
+    width: 20rem;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.music_controls .main_button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .fas{
+    font-size: 2.3rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.401));
+    color: black;
+}
+
+#prev:hover{
+    transform: scale(1.05);
+    color: rgba(2, 2, 128, 0.793);
+}
+
+#next:hover{
+    transform: scale(1.05);
+    color: rgba(2, 2, 128, 0.793);
+}
+
+.music_controls .fa-play:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 1.2rem 2rem 0.5rem rgba(0, 0, 0, 0.35);
+    animation-play-state: paused;
+}
+
+.anime{
+    animation: scale 2s linear infinite ;
+}
+
+@keyframes scale{
+    0%, 50%, 100% { transform: scale(1, 1); }
+  40%, 80% { transform: scale(0.92, 0.95); }
+}
+
